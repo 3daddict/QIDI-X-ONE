@@ -122,8 +122,8 @@ M8030	I0	        ;If you need to force the extruder to automatically turn on the
 M8030 I50 T-1		;IThe following parameters indicate the temperature, when 0 is, that the motherboard fan will not change with temperature, or when the extrusion head temperature reaches the specified temperature, the fan will open
 
 ;set the offset of the second extrusion head (right squeeze head) in mm. The following two parameters are only valid when the nozzle is set to 2
-M8031	S35.0	;X offset direction
-M8032	S0		;Y offset direction
+M8031	S31.18	;S35.0 X offset direction
+M8032	S3.7		;S0 Y offset direction
 
 ;SD enable SD card folder support
 M8034	I1		;0: disable 1： enable
