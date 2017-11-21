@@ -169,7 +169,7 @@ M8489	P0		;whether or not the motor is turned off after the print is complete   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;the temperature of the PID parameter settings, if you are not an expert, and your current temperature control is relatively stable, you should not edit this parameter
 M301 P30 I0.75 D600 ;set new PID Settings here after M303 PID Auto tune cycle is complete M301 PXX IX.XX DXXX
-
+;M301 P21.303133 I1.274111 D89.047089 ; QIDI PID tune 11-20-2017
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;Auto tune PID command，this command will block for a long time
 M303 E0 S150 C5	;temperature 150 degrees, automatic cycle shock 4 times, auto-modulation after the parameters may pass repetier-host see the modulation after pid parameter.
