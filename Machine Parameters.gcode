@@ -1,6 +1,7 @@
 ;After the semicolon is a comment, please modify the parameters according to the annotation
 ;The basic format is Mxxx Ixxx,Mxxx Txxx or Mxxx Sxxx, among them Ixx(is the letter I, not a numbner 1)Followed by numbers, with possible decimals，it can can also be hexadecimal (starting with 0x)，Sxx followed by a floating point number.
 ; 
+M8998 I1		;Enable configuration
 ;;;;;;;;;;;;;;;;;;;;;;;;;The following two configurations need to be used in conjunction with the printer for shutdown and power saving;;;;;;;;;;
 M8000 I0	;;Power to save support or not, I1 said support, I0 that does not support, set up after the restart to take effect
 M8001 I0	;;Print shutdown support or not, I1 said support, I0 that does not support, set up after the restart to take effect
@@ -71,9 +72,9 @@ M8023 T0		;1: prohibit temperature error detection       0: enable temperature d
 
 ;X，Y，Z The maximum distance is set according to the actual print size mm
 ;be sure to set this parameter carefully！！！！！！
-M8024 I175		;X maximum distance, in the case of lcd to enable the sound, the movement beyond the trigger will cause the buzzer tweet
-M8025 I149		;Y maximum distance
-M8026 I149		;Z maximum distance
+M8024 I178		;175 X maximum distance, in the case of lcd to enable the sound, the movement beyond the trigger will cause the buzzer tweet
+M8025 I144		;149 Y maximum distance
+M8026 I149		;149 Z maximum distance
 
 ;Set the number of extrusion head, at least one, currently up to 2
 M8027	I1		;configure the number of extruded heads
