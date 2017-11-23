@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="QIDI X-ONE" version="2017-11-18 11:31:05" app="S3D-Software 4.0.0">
+<profile name="QIDI X-ONE" version="2017-11-23 09:33:04" app="S3D-Software 4.0.0">
   <baseProfile>Qidi Technology X-one(2)</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>PLA-BLACK</printQuality>
@@ -7,9 +7,9 @@
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>0</autoWidth>
-    <width>0.4</width>
-    <extrusionMultiplier>1</extrusionMultiplier>
+    <autoWidth>1</autoWidth>
+    <width>0.48</width>
+    <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>0.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -60,15 +60,15 @@
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
   <infillExtruder>0</infillExtruder>
-  <internalInfillPattern>Rectilinear</internalInfillPattern>
+  <internalInfillPattern>Grid</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>10</infillPercentage>
-  <outlineOverlapPercentage>30</outlineOverlapPercentage>
-  <infillExtrusionWidthPercentage>300</infillExtrusionWidthPercentage>
+  <infillPercentage>100</infillPercentage>
+  <outlineOverlapPercentage>35</outlineOverlapPercentage>
+  <infillExtrusionWidthPercentage>200</infillExtrusionWidthPercentage>
   <minInfillLength>0.4</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <internalInfillAngles>45,-45</internalInfillAngles>
-  <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
+  <overlapInternalInfillAngles>1</overlapInternalInfillAngles>
   <externalInfillAngles>45,-45</externalInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
@@ -171,10 +171,10 @@
   <filamentDiameters>1.75|1.75|1.75|1.75|1.75|1.75</filamentDiameters>
   <filamentPricesPerKg>16.15|46|46|46|46|46</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
-  <useMinPrintHeight>1</useMinPrintHeight>
+  <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>0.4</minPrintHeight>
-  <useMaxPrintHeight>0</useMaxPrintHeight>
-  <maxPrintHeight>0</maxPrintHeight>
+  <useMaxPrintHeight>1</useMaxPrintHeight>
+  <maxPrintHeight>0.4</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
@@ -197,11 +197,11 @@
   <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage>
   <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
   <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
-  <horizontalSizeCompensation>0</horizontalSizeCompensation>
+  <horizontalSizeCompensation>-0.25</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
     <globalExtruderTemperature>175</globalExtruderTemperature>
     <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
@@ -237,7 +237,7 @@
     <topSolidLayers>6</topSolidLayers>
     <bottomSolidLayers>6</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>10</infillPercentage>
+    <infillPercentage>100</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
 </profile>
