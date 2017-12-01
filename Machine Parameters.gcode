@@ -31,7 +31,7 @@ M8008	I1000       ;Acceleration, the greater the value, the actual operation of 
 
 ;Machine-related parameters, parameters set finished, please print a cube, and then use the size of the size of the ruler to confirm the parameters no problem
 ;M8009  S0.010625		;XY each step of the mm value, such as 20 teeth, pitch 2.032mm, 1.8 degree stepper motor, 16 subdivision, compared with (20*2.032)/((360/1.8)*16)
-M8009 X0.010617 Y0.010600	;If you need to set the X, Y stepper motor parameters independently, you can use this command (to remove the Bank)
+M8009 X0.010617 Y0.010595	;If you need to set the X, Y stepper motor parameters independently, you can use this command (to remove the Bank)
 M8010  S0.0025	;Z each step of the mm value, the formula: lead / ((360/1.8)*16), the lead for the screw to turn the platform to rise the height
 M8011  S0.00210	;   S0.01079E the value of each step mm, this value is equal to the circumference of the extrusion gear divided by 3200, if there is a reduction gear to be divided by the reduction ratio, if you find the set of silk is thin, or often fault, it is recommended to set this value To be smaller than the true value, the silk is better
 
